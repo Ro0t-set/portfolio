@@ -26,7 +26,7 @@ const greeting = {
     "Clean code is not just a practice but a philosophy that I bring to every project. With a commitment to continuous improvement, I aspire to create impactful solutions that not only function seamlessly but also showcase the beauty of well-crafted code."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1aMEJ-26222EaPKvDVtOcBqv2FgdpPcix/view?usp=drive_link", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1aMEJ-26222EaPKvDVtOcBqv2FgdpPcix", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
