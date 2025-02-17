@@ -4,6 +4,7 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import upcLogo from "./assets/images/UPCLogo.png";
 
 // Splash Screen
 
@@ -113,8 +114,7 @@ const educationInfo = {
       desc: "Focus on distributed systems, machine learning, and cybersecurity."
     },
     {
-      schoolName: "Universitat Politècnica de Catalunya",
-      logo: require("./assets/images/UPCLogo.png"),
+      logo: upcLogo,
       subHeader: "M.Eng Exchange Student",
       duration: "Feb 2023 - Jul 2023",
       desc: "Participated in exchange program focused on advanced programming paradigms."

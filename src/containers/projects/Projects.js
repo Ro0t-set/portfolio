@@ -19,9 +19,14 @@ export default function Projects() {
       fetch("/profile.json")
         .then(result => {
           if (result.ok) {
-            return result.json();
+            const contentType = result.headers.get("content-type");
+            if (contentType && contentType.indexOf("application/json") !== -1) {
+              return result.json();
+            } else {
+              throw new Error("Received non-JSON response");
+            }
           }
-          throw result;
+          throw new Error("Network response was not ok");
         })
         .then(response => {
           setrepoFunction(response.data.user.pinnedItems.edges);
